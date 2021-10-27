@@ -3,6 +3,8 @@
     src: url('../fonts/Espoir/Espoir.otf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
 .espoir {
     font-family: 'Espoir Serif' !important;
 }
