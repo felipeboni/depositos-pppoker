@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'Espoir Serif';
+    src: url('../fonts/Espoir/Espoir.otf');
+}
+
+.espoir {
+    font-family: 'Espoir Serif' !important;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+.gold {
+    color: #DAA520 !important;
+}
+
+
+/* GOLD BUTTON ANIM */
+
+.enter-animation {
+    animation: enter-animation 300ms ease-out;
+}
+
+.leave-animation {
+    animation: leave-animation 300ms ease-out;
+}
+
+@keyframes enter-animation {
+    0% {
+        transform: scale(50%);
+    }
+    65% {
+        transform: scale(110%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes leave-animation {
+    0% {
+        transform: scale(50%);
+    }
+    65% {
+        transform: scale(110%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+    border: unset !important;
+    outline: unset !important;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+
+}
+
+.cards {
+    height: 250px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: -80px;
+}
+
+
+/* LATERAL IMAGES */
+
+#capa::before {
+    content: "";
+    background-image: url('../img/bg.png');
+    width: 950px;
+    height: 100%;
+    left: -500px;
+    top: -75px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#performance::before {
+    content: "";
+    background-image: url('../img/bg.png');
+    width: 950px;
+    height: 100%;
+    right: -550px;
+    top: -350px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#como-funciona::before {
+    content: "";
+    background-image: url('../img/bg.png');
+    width: 950px;
+    height: 100%;
+    left: -438px;
+    bottom: -1500px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#quem-somos::before {
+    content: "";
+    background-image: url('../img/bg.png');
+    width: 950px;
+    height: 100%;
+    right: -550px;
+    top: -350px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#nossos-numeros::before {
+    content: "";
+    background-image: url('../img/bg.png');
+    width: 1014px;
+    height: 100%;
+    left: -438px;
+    top: -260px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#whatsapp::before {
+    content: "";
+    background-image: url('../img/bg.png');
+    width: 1014px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -450px;
+}
+
+.logo-subtle {
+    position: absolute;
+    inset: 15%;
+}
+
+.pppoker-img {
+    max-width: 40%;
+}
+
+.line {
+    background-color: #daa520;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 290px;
+    left: 0%;
+}
+
+.navbar-collapse {
+    position: fixed;
+    right: 0;
+    background-color: #000;
+    height: 100%;
+    top: 0;
+    width: 300px;
+    padding: 50px;
+    z-index: 999;
+}
+
+.navbar-collapse.show {
+    animation: menu-show 300ms ease-out;
+
+}
+
+body {
+    transition: all 300ms ease;
+}
+
+body.show::before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0 0 0 / 70%);
+    position: fixed;
+    z-index: 998;
+}
+
+@keyframes menu-show  {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+.nav-logo {
+    height: 32px !important;
+}
+
+.headline-text {
+    font-size: 30pt;
+}
+
+.headline-subtext {
+    font-size: 22pt;
+}
+
+.full-hours-text {
+    font-size: 25pt;
+}
+
+.line-full-hours {
+    height: 3px;
+}
+
+.hiw-text {
+    font-size: 50pt;
+}
+.wwa-paragraph {
+    font-size: 20px;
+    max-width: 43ch;
+    font-weight: 500;
+}
+.performance-text {
+    font-size: 50pt;
+}
+.testimony-text {
+    font-size: 50pt;
+}
+.tww-text {
+    font-size: 50pt;
+}
+.wpp-icon-container {
+    height: 180px;
+}
+.footer-item {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#btn-request {
+    max-width: 500px;
+    height: 95px;
+    z-index: 2;
+}
+
+.como-funciona-wpp h3 {
+    font-size: 20pt !important;
+    font-weight: 500 !important;
+    max-width: 15ch;
+    margin: 0 auto !important;
+}
+.como-funciona-wpp p {
+    font-size: 16pt !important;
+    max-width: 17ch;
+    margin: 0 auto !important;
+}
+
+.como-funciona-pay h3 {
+    font-size: 20pt !important;
+    font-weight: 500 !important;
+    max-width: 18ch;
+    margin: 0 auto !important;
+}
+.como-funciona-pay p {
+    font-size: 16pt !important;
+    max-width: 17ch;
+    margin: 0 auto !important;
+}
+
+.como-funciona-token h3 {
+    font-size: 20pt !important;
+    font-weight: 500 !important;
+    max-width: 18ch;
+    margin: 0 auto !important;
+}
+.como-funciona-token p {
+    font-size: 16pt !important;
+    max-width: 17ch;
+    margin: 0 auto !important;
+}
+
+/* DESKTOP ADJUSTMENTS */
+
+@media (orientation: landscape) {
+    .col-custom-1 {
+        flex: 0 0 15%;
+        max-width: 15%;
+    }
+    
+    .col-custom-2 {
+        flex: 0 0 21%;
+        max-width: 21%;
+    }
+}
+
+
+/* MOBILE ADJUSTMENTS */
+
+@media (orientation: portrait) {
+    
+    section {
+        overflow-x: hidden !important;
+    }
+    .vl {
+        border-left: 2px solid #daa520;
+        height: 100px;
+    }
+    .nav-logo {
+        height: 23px !important;
+    }
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+        margin-bottom: -5px;
+    }
+    .headline-text {
+        font-size: 15pt;
+    }
+    .headline-subtext {
+        font-size: 14pt;
+        max-width: 23ch;
+        margin: 0 auto;
+    }
+    .full-hours-text {
+        font-size: 15pt;
+    }
+    .line-full-hours {
+        height: 1px;
+    }
+    .specialized-text {
+        font-size: 16px;
+    }
+    .logo-subtle {
+        font-size: 18px;
+    }
+    .hiw-text {
+        font-size: 25pt !important;
+    }
+
+    .como-funciona-wpp h3 {
+        font-size: 12pt !important;
+        max-width: 18ch;
+        margin: 0 auto !important;
+    }
+    .como-funciona-wpp p {
+        font-size: 10pt !important;
+        max-width: 21ch;
+        margin: 0 auto !important;
+    }
+
+    .como-funciona-pay h3 {
+        font-size: 12pt !important;
+        max-width: 18ch;
+        margin: 0 auto !important;
+    }
+    .como-funciona-pay p {
+        font-size: 10pt !important;
+        max-width: 21ch;
+        margin: 0 auto !important;
+    }
+
+    .como-funciona-token h3 {
+        font-size: 12pt !important;
+        max-width: 18ch;
+        margin: 0 auto !important;
+    }
+    .como-funciona-token p {
+        font-size: 10pt !important;
+        max-width: 21ch;
+        margin: 0 auto !important;
+    }
+
+    .como-funciona-img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #btn-request {
+        max-width: 200px;
+        height: 95px;
+    }
+
+    .wwa-text {
+        font-size: 25pt !important;
+    }
+    .wwa-paragraph {
+        font-size: 12px;
+        max-width: 30ch;
+    }
+    .performance-text {
+        font-size: 20pt;
+    }
+    .testimony-text {
+        font-size: 25pt;
+    }
+    .tww-text {
+        font-size: 25pt;
+    }
+    .wpp-icon-container {
+        height: 80px;
+    }
+    .list-inline-item.px-xl-5 {
+        width: 100%;
+    }
+    .footer-item {
+        font-size: 15px;
+    }
+    p.footer-item {
+        font-size: 10px;
+    }
+
+    .clients h2 {
+        font-size: 30pt !important;
+    }
+    .clients h3 {
+        margin-top: -30px;
+        font-size: 15pt !important;
+    }
+
+    .transactions h2 {
+        font-size: 30pt !important;
+    }
+    .transactions h3 {
+        margin-top: -30px;
+        font-size: 15pt !important;
+    }
+
+    .tokens h2 {
+        font-size: 30pt !important;
+    }
+    .tokens h3 {
+        margin: unset auto;
+        margin-top: -30px;
+        font-size: 15pt !important;
+        max-width: 19ch;
+        text-align: center;
+    }
+
+    *:not(body)::before {
+        transform: scale(.5);
+    }
+    #capa::before {
+        top: -250px;
+    }
+    
+    #performance::before {
+        top: -250px;
+    }
+    
+    #como-funciona::before {
+        bottom: -830px;
+        transform: scale(.3);
+    }
+    
+    #nossos-numeros::before {
+        transform: scale(.4);
+        left: -500px;
+        top: -550px;
+    }
+    
+    #whatsapp::before {
+        height: 50%;
+        left: -390px;
+        margin-top: -220px;
+    }
+}
